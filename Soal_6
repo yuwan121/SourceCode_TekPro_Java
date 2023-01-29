@@ -1,0 +1,25 @@
+/*
+ * Nama	:  Muhamad Fahri Yuwan Dwi Putra
+ * NIM	: 221524047
+ * Kelas: 1B
+ */
+package soal1sampai7;
+import java.util.Scanner;
+import java.math.BigInteger;
+/**
+ *
+ * @author BlackStyle
+ */
+public class soal6 {
+    public static void main(String[]args){
+        //Kamus Data
+        BigInteger bil1,bil2;
+        //Membuat Scanner baru
+        Scanner keyboard = new Scanner(System.in);
+        //Algoritma
+        bil1 = keyboard.nextBigInteger();
+        bil2 = keyboard.nextBigInteger();
+        System.out.println(bil1.add(bil2));
+        System.out.println(bil1.multiply(bil2));
+    }
+}
