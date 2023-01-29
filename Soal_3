@@ -1,0 +1,31 @@
+package soal1sampai7;
+import java.util.Scanner;
+/*
+ * Nama	: Muhamad Fahri Yuwan Dwi Putra
+ * NIM	: 221524047
+ * Kelas: 1B
+ */
+
+/**
+ *
+ * @author BlackStyle
+ */
+public class soal3 {
+    public static void main(String[] args){
+    //Kamus Data
+    int angka1,angka2;
+    char operasi;
+    //Membuat scanner baru
+    Scanner keyboard = new Scanner(System.in);
+    //Algoritma
+    angka1 = keyboard.nextInt();
+    operasi = keyboard.next().charAt(0);
+    angka2 = keyboard.nextInt();
+    //Membuat sesuai kondisi tertentu saat penginputan
+    System.out.println((operasi == '+') ? angka1 + angka2 : 
+            (operasi == '-') ? angka1 - angka2 :
+            (operasi == '/') ? angka1 / angka2 :
+            (operasi == '*') ? angka1 * angka2 :
+            angka1 % angka2);
+    }
+}
