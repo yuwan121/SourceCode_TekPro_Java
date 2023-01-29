@@ -1,0 +1,37 @@
+/*
+ * Nama	:  Muhamad Fahri Yuwan Dwi Putra
+ * NIM	: 221524047
+ * Kelas: 1B
+ */
+package soal1sampai7;
+import java.util.Scanner;
+/**
+ *
+ * @author BlackStyle
+ *
+ */
+public class soal4 {
+    /*
+        Logika
+        if(item>=40 && item<=80) maka
+	(0.25*(item*50.000)) + 500.000
+        if(item>80) maka
+            (0.35*(item*50.000)) + 500.000
+        if(item<40 && item>=15) maka
+            (500.000+((item*50.000)*0.10)
+        if(item<15) maka
+            (500.000-(((15-item)*50.000)*0.15)
+    */
+    public static void main (String[]args){
+    //Kamus Data
+    int item;
+    //Membuat Scanner baru
+    Scanner keyboard = new Scanner (System.in);
+    //Algoritma
+    item = keyboard.nextInt();
+        System.out.println((int)((item>80)? (0.35*(item*50000))+500000: 
+            (item>=40 && item <=80)? (0.25*(item*50000)) + 500000 :
+            (item<40 && item>=15)? 500000+((item*50000)*0.10):
+            500000-(((15-item)*50000)*0.15)));
+    }
+}
