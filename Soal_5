@@ -1,0 +1,25 @@
+/*
+ * Nama	:  Muhamad Fahri Yuwan Dwi Putra
+ * NIM	: 221524047
+ * Kelas: 1B
+ */
+package soal1sampai7;
+import java.util.Scanner;
+/**
+ *
+ * @author BlackStyle
+ */
+public class soal5 {
+    public static void main(String[]args){
+        //Kamus Data
+        String plat1,plat2,plat3,plat4;
+        double hasil;
+        //Membuat Scanner Baru
+        Scanner keyboard = new Scanner(System.in);
+        //Algoritma
+        plat1 = keyboard.next();plat2 = keyboard.next();plat3 = keyboard.next();plat4 = keyboard.next();
+        plat1 = plat1.concat(plat2.concat(plat3.concat(plat4)));
+        hasil = Double.parseDouble(plat1);
+        System.out.println((hasil-999999)%5==0?"Jalan":"Berhenti");
+    }
+}
