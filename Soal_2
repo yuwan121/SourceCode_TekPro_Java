@@ -1,0 +1,59 @@
+package soal1sampai7;
+import java.util.Scanner;
+/**
+ * @author Muhamad Fahri Yuwan Dwi Putra
+ * NIM : 221524047
+ * KELAS : 1B
+ */
+public class soal2 {
+    public static void main(String[] args){
+    //Kamus Data
+    String kata1,kata2,kata3;
+    int bil1,bil2,bil3;
+    //Membuat Scanner  
+    Scanner keyboard = new Scanner (System.in);
+    //Algoritma
+    kata1 = keyboard.next();
+    bil1 = keyboard.nextInt();
+    kata2 = keyboard.next();
+    bil2 = keyboard.nextInt();
+    kata3 = keyboard.next();
+    bil3 = keyboard.nextInt();    
+    //Membuat kondisi tertentu
+    System.out.println("================================");
+    //Kata dan bilangan ke 1
+    System.out.print(kata1+"\t\t");
+    if (bil1>= 10 && bil1 <100){
+        System.out.println("0"+bil1);
+    }
+    if(bil1<10){
+        System.out.println("0"+"0"+bil1);
+    }
+    if(bil1>=100){
+        System.out.println(bil1);
+    }
+    //Kata dan bilangan ke 2
+    System.out.print(kata2+"\t\t");
+    if (bil2>= 10 && bil2 <100){
+        System.out.println("0"+bil2);
+    }
+    if(bil2<10){
+        System.out.println("0"+"0"+bil2);
+    }
+    if(bil2>=100){
+        System.out.println(bil2);
+    }
+    //Kata dan bilangan ke 3
+    System.out.print(kata3+"\t\t");
+    if (bil3>= 10 && bil3 <100){
+        System.out.println("0"+bil3);
+    }
+    if(bil3<10){
+        System.out.println("0"+"0"+bil3);
+    }
+    if(bil3>=100){
+        System.out.println(bil3);
+    }    
+    System.out.println("================================");
+    }
+}
