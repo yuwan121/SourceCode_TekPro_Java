@@ -1,0 +1,25 @@
+package soal1sampai7;
+import java.util.Scanner;
+/**
+ *
+ * @author Muhamad Fahri Yuwan Dwi Putra
+ * NIM : 221524047
+ * KELAS : 1B
+ */
+public class soal1 {
+    public static void main(String[] args){
+        //Deklarasi variabel
+        String kalimat;
+        //Membuat scanner baru
+        Scanner keyboard = new Scanner (System.in);
+        //Algoritma
+        kalimat = keyboard.nextLine();
+        String[]token = kalimat.split("[ !,?._'@]+"); //Memisahkan string ke string lain
+                                                      //Jika terdapat simbol-simbol ( !,?._'@) ini
+        System.out.println(token.length); //Untuk menampilkan ke layar terdapat berapa token yang ada
+        for (String token1 : token) {
+            System.out.println(token1); //Untuk menampilkan ke layar string yang sudah terpisah dari setiap
+                                        //tokennya, ditampilkan sampai stringnya habis
+        }
+    }
+}
